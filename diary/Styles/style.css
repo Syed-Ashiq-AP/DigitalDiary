@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+
+* {
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s ease-in-out;
+
+}
+
+body,
+html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: 'Great Vibes', cursive;
+}
+
+input {
+      padding: 5px;
+      border-radius: 5px;
+      border: 0px solid rgb(178, 178, 178);
+}
+
+button {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: white;
+      border: none;
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+}
+
+button:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+}
+
+menu {
+      position: absolute;
+      background-color: rgba(58, 58, 58, 0.5);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      padding: 10px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+}
+
+input {
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      border: 2px solid rgb(230, 230, 230);
+}
+
+input::placeholder {
+      color: rgb(219, 219, 219);
+}
+
+menu-item {
+      padding: 5px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 5px;
+}
+
+menu-item:hover {
+      background-color: white;
+      color: black;
+}
+
+menu-bar p {
+      width: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+}
+
+menu-bar p:hover {
+      background-color: white;
+      color: black;
+
+}
+
+pre-view {
+      width: 500px;
+      height: 400px;
+      position: absolute;
+      background-color: rgba(58, 58, 58, 0.643);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+}
+
+pre-view img {
+      border-radius: 10px;
+      margin-top: 10px;
+}
+
+pop-up{
+      padding: 5px;
+      border-radius: 10px;
+      background-color: rgba(58, 58, 58, 0.643);
+      backdrop-filter: blur(5px);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      align-items: center;
+      bottom: -10px;
+      opacity: 0;
+}
+
+table{
+      border: 1px solid black;
+      border-radius: 5px;
+}
+
+td {
+      border: 1px solid black;
+      padding: 5px;
+      margin: 0;
+}
+
+#rdate,
+#ldate {
+      width: 120px;
+}
+
+.shpp{
+      opacity: 1;
+      bottom: 60px;
+}
+
+.page-navigator button {
+      width: 100px;
+      background-color: black;
+      color: white;
+      border: 3px solid black;
+}
+
+.page-navigator button:hover {
+      background-color: white;
+      color: black;
+
+}
+
+.diary {
+      width: 98%;
+      height: 98%;
+      background-color: rgb(255, 254, 254);
+      box-shadow: 0px 0px 190px 100px rgba(0, 0, 0, 0.2);
+      border-radius: 15px;
+      overflow: hidden;
+}
+
+.main-page {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+}
+
+.cover-page {
+      height: 100%;
+      width: 50%;
+      background-color: rgba(44, 160, 189, 0.771);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.cover-page h2 {
+      font-size: 80px;
+}
+
+.cover-page h1 {
+      font-size: 30px;
+}
+
+.menu-page {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.page-fields {
+      width: 400px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.page-fields * {
+      margin: 5px;
+}
+
+.diary-details {
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      background-color: rgb(102, 184, 216);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+}
+
+.diary-details {
+      font-family: 'Kaushan Script', cursive;
+      letter-spacing: 1px;
+}
+
+.diary-topses{
+      letter-spacing: 1px;
+      font-size: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+}
+
+.events{
+      overflow: auto;
+      max-height: 425px;
+}
+
+
+.events .page-fields button:hover{
+      background-color: rgb(205, 55, 55);
+}
+
+.diary-page {
+
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+}
+
+.diary-topsec {
+      width: 99%;
+      padding: 10px;
+      height: 150px;
+      background-color: rgb(127, 182, 206);
+      color: white;
+      display: flex;
+      flex-direction: row;
+
+}
+
+.diary-topdet {
+      width: 50%;
+      height: 100%;
+      display: flex;
+}
+
+.diary-topdet h1 {
+      font-size: 120px;
+}
+
+.diary-lid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+}
+
+.diary-lid p {
+      font-size: 23px;
+      margin-left: 10px;
+}
+
+.dtdr {
+      justify-content: end;
+}
+
+.diary-pages {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+}
+
+.diary-p {
+      width: 100%;
+      max-width: 50%;
+      height: 96%;
+      margin: 10px;
+      margin-right: 5px;
+      border-radius: 10px;
+      padding: 5px;
+      overflow: hidden;
+      flex-basis: 50%;
+      font-family: 'Kaushan Script', cursive;
+}
+
+.diary-lpage {
+
+      box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+}
+
+
+.diary-rpage {
+      box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+}
+
+.TODOL {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+}
+
+.diary-p button {
+      background-color: black;
+      color: white;
+      width: 20px;
+      height: 20px;
+      border: 3px solid black;
+      padding: 0;
+}
+
+.diary-p button:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+}
+
+.TDL_H {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.TDL {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.TDL input[type=checkbox] {
+      appearance: none;
+      border: 2px solid rgb(209, 209, 209);
+      width: 15px;
+      height: 15px;
+}
+
+.TDL input[type=checkbox]:checked {
+      background-color: rgb(21, 101, 158);
+}
+
+.widget {
+      font-size: 20px;
+      display: inline;
+      cursor: pointer;
+}
+
+.WTB {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+      position: relative;
+      width: min-content;
+}
+
+
+.WTB-C {
+      flex-basis: content;
+      border: 1px solid black;
+      padding: 5px;
+}
+
+.WTB-btar {
+      position: absolute;
+      right: -30px;
+}
+
+.page-navigator {
+      width: 95%;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: -10px;
+      opacity: 0;
+}
+
+.page-navigator:hover {
+      bottom: 10px;
+      opacity: 1;
+}
