@@ -9,13 +9,11 @@ function load_data(){
         let tdata = JSON.parse(v)
         diary[k]=tdata.year
         let yr =  parseInt(tdata.year)
-        let tyr=(yr+1).toString()
-        let y = yr+"-"+tyr.slice(tyr.length-2)
         document.getElementById("diary-list").insertAdjacentHTML('beforeend',
         `
         <div class="diary">
             <h3>`+k+`</h3>
-            <p>Year:`+y+`</p>
+            <p>Year:`+yr+`</p>
             <div>
                 <button onclick="openDiary('`+k+`')" class="diary-btn">Use</button>
             </div>
@@ -55,7 +53,7 @@ function addDiary(){
 }
 
 function openDiary(dn){
-    location.replace(location.origin+"/Diary?diary="+dn)
+    location.replace(location.origin+"/diary?diary="+dn)
 }
 
 load_data()
